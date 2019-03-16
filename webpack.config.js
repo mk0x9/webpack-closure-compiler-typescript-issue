@@ -12,7 +12,9 @@ module.exports = {
         { mode: "STANDARD" },
         {
           compilation_level: "ADVANCED",
-          externs: "externs.js"
+          externs: "externs.js",
+          language_in: "ECMASCRIPT5_STRICT",
+          language_out: "ECMASCRIPT5"
         }
       )
     ]
