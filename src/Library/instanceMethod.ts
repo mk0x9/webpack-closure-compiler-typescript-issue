@@ -1,3 +1,3 @@
-export default function instanceMethod(param: any) {
-  console.log("instanceMethod: ", param);
+export default function instanceMethod(param: LibraryOptions) {
+  console.log("instanceMethod: ", param.msg);
 }

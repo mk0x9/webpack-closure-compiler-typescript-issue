@@ -2,7 +2,8 @@
     "files": ["src/entrypoint.ts", "src/lib.ts"],
     "compilerOptions": {
         "target": "es5",
-        "module": "commonjs",
+        "module": "es2015",
+        "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "./build",
         "strict": true,

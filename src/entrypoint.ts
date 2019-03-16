@@ -1,5 +1,8 @@
-const libInstance = new window.lib({ msg: "hello" });
+const options = { msg: "hello" };
 
-window.lib.staticMethod("hi");
+const libInstance = new window.lib(options);
 
-libInstance.instanceMethod("hi again");
+window.lib.staticMethod(options);
+libInstance.instanceMethod(options);
+
+// window["a"] = libInstance;

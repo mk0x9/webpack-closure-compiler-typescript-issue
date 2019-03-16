@@ -3,7 +3,7 @@ const ClosurePlugin = require("closure-webpack-plugin");
 
 module.exports = {
   entry: {
-    lib: "./src/lib.ts",
+    lib: "./src/Library.ts",
     entrypoint: "./src/entrypoint.ts"
   },
   optimization: {
@@ -14,7 +14,9 @@ module.exports = {
           compilation_level: "ADVANCED",
           externs: "externs.js",
           language_in: "ECMASCRIPT5_STRICT",
-          language_out: "ECMASCRIPT5"
+          language_out: "ECMASCRIPT5",
+          generate_exports: true,
+          export_local_property_definitions: true
         }
       )
     ]
